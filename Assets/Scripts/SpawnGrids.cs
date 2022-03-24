@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnGrids : MonoBehaviour
@@ -68,8 +67,8 @@ public class SpawnGrids : MonoBehaviour
                         _rightHolder.childrenHolders[i].HolderIndex = i + 1;
                 }
 
-                _leftHolder.OnSpawnPairsComplete += SetInfoToPairs;
-                _rightHolder.OnSpawnPairsComplete += SetInfoToPairs;
+                // _leftHolder.OnSpawnPairsComplete += SetInfoToPairs;
+                // _rightHolder.OnSpawnPairsComplete += SetInfoToPairs;
                 
                 _leftHolder.SetInfoHolder(playersOnOneSide, 0);
                 _rightHolder.SetInfoHolder(playersOnOneSide, 0);
